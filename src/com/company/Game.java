@@ -24,11 +24,12 @@ public class Game {
       player1.setBallsInHands();
       player2.setBallsInHands();
       player1.setGuessIsPairedOrNot();
-      System.out.println(player1.getName()+ " obstawil " + player1.getBallsInHands() +" kulek");
-      System.out.println(player2.getName() + " obstawil " + player2.getBallsInHands() +" kulek");
+
 
       boolean activePlayerGuess = player1.isGuessIsPairedOrNot();
-      System.out.println(player1.getName() + "Ustalil ze " + player1.isGuessIsPairedOrNot() + " " + player2.getName() + " obstawil parzysta liczbe kulek");
+      System.out.println(player1.getName() + " Ustalil  '" + player1.isGuessIsPairedOrNot() + "' ze gracz " + player2.getName() + " ma  parzysta liczbe kulek w reku");
+      System.out.println(player1.getName()+ " obstawil " + player1.getBallsInHands() +" kulek");
+      System.out.println(player2.getName() + " obstawil " + player2.getBallsInHands() +" kulek");
       list.add(player1.getBallsInHands());
       list.add(player2.getBallsInHands());
       list.add(player1.getBallsInStack());
