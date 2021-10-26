@@ -7,15 +7,16 @@ public class PlayerTurn implements Turn {
   private int ballsInStack;
   private boolean guessIsPairedOrNot;
   UserInput userInput = new UserInput();
-  private final String name = "Player";
+  private final String name;
   Scanner scanner = new Scanner(System.in);
 
   public int getBallsInHands() {
     return ballsInHands;
   }
 
-  public PlayerTurn(int ballsInStack) {
+  public PlayerTurn(int ballsInStack, String name) {
     this.ballsInStack = ballsInStack;
+    this.name = name;
   }
 
   public void setBallsInHands() {
@@ -58,3 +59,4 @@ public class PlayerTurn implements Turn {
         return name;
     }
 }
+
