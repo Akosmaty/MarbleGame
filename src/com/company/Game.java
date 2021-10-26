@@ -69,7 +69,7 @@ public class Game {
       System.out.println(playerTwo.getName() + " posiada " + playerTwo.getBallsInStack() + " kulek");
       Scanner scanner = new Scanner(System.in);
       System.out.println(
-          "Kliknij Y jesli chcesz zaczac nowa gre \n jesli chcesz zamknac kilknij dowolny przycisk");
+          "Kliknij Y jesli chcesz powtorzyc gre \n jesli chcesz zamknac kilknij dowolny przycisk");
 
       if (scanner.nextLine().equalsIgnoreCase("Y")) {
         System.out.println(" \n zaczynamy nowa gre \n ");
